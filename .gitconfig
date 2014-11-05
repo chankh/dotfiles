@@ -1,10 +1,14 @@
 [core]
 	autocrlf = input
 	safecrlf = false
-[svn]
-	rmdir = true
 [user]
 	name = KH Chan
 	email = khchan@maaii.com
 [pull]
 	rebase = true
+[push]
+  default = simple
+[alias]
+  cr = "!f() { git push origin @:refs/for/${1}; }; f"
+  f = "!f() { git fetch ${1-origin}; }; f"
+  ri = "!f() { git rebase -i origin/${1}; }; f"
