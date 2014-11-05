@@ -1,0 +1,10 @@
+[core]
+	autocrlf = input
+	safecrlf = false
+[svn]
+	rmdir = true
+[user]
+	name = KH Chan
+	email = khchan@maaii.com
+[pull]
+	rebase = true
