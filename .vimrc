@@ -45,6 +45,10 @@ Plug 'honza/vim-snippets'
 Plug 'Shougo/neomru.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 " }}}
+
+" fzf {{{
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+" }}}
 call plug#end()
 
 let mapleader = "\\"
