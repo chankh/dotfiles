@@ -19,6 +19,14 @@ export EDITOR=vim
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
+UNAME=`uname`
+
+if [ $UNAME == "Linux" ]; then
+  export JAVA_HOME=/usr/java/latest
+elif [ $UNAME == "Darwin" ]; then
+  export JAVA_HOME="$(/usr/libexec/java_home)"
+fi
+
 # Load GIT bash prompt
 . ~/.git-prompt.sh
 . ~/.bash_prompt
