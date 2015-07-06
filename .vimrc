@@ -68,7 +68,7 @@ set title
 " highlight the current line
 set cursorline
 
-silent! colorscheme twilight256
+silent! colorscheme Tomorrow-Night-Eighties
 
 " Indentation {{{
 " use soft TAB
