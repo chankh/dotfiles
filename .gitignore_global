@@ -6,6 +6,10 @@
 *.exe
 *.o
 *.so
+*.pyc
+bin
+build
+target
 
 # Packages #
 ############
@@ -25,6 +29,7 @@
 *.log
 *.sql
 *.sqlite
+logs
 
 # OS generated files #
 ######################
@@ -41,7 +46,15 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.swp
+.idea
+*.iml
+.classpath
+.settings
+.project
 
 # others #
 ##########
 .bak
+.gradle
+.svn
+.gitignore
