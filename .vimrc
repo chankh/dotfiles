@@ -15,12 +15,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/unite.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
-Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
+Plug 'itchyny/lightline.vim'
 " }}}
 
 " colorscheme {{{
@@ -49,6 +49,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 " fzf {{{
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 " }}}
+
 call plug#end()
 
 let mapleader = "\\"
@@ -110,3 +111,7 @@ nmap <leader>l :setlocal number!<CR>
 nmap <leader>o :set paste!<CR>
 
 nmap <leader>d :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+
+let g:lightline = {
+  \ 'colorscheme': 'Tomorrow_Night_Eighties',
+  \ }
