@@ -36,6 +36,10 @@ Plug 'tpope/vim-git'
 Plug 'nvie/vim-flake8'
 " }}}
 
+" Go{{{
+Plug 'fatih/vim-go'
+" }}}
+
 " snippets {{{
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
