@@ -36,7 +36,7 @@ Plug 'tpope/vim-git'
 Plug 'nvie/vim-flake8'
 " }}}
 
-" Go{{{
+" Go {{{
 Plug 'fatih/vim-go'
 " }}}
 
@@ -116,6 +116,15 @@ nmap <leader>o :set paste!<CR>
 
 nmap <leader>d :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
+" Go {{{
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+" }}}
+
 let g:lightline = {
   \ 'colorscheme': 'Tomorrow_Night_Eighties',
   \ }
+
+set noshowmode
