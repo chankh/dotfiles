@@ -1,6 +1,7 @@
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/versions'
 cask 'java'
 brew 'android-platform-tools'
 brew 'autoconf'
