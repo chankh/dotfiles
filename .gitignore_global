@@ -48,6 +48,8 @@ Thumbs.db
 *.swp
 .idea
 *.iml
+*.ipr
+*.iws
 .classpath
 .settings
 .project
