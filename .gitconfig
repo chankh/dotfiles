@@ -15,4 +15,4 @@
   ri = "!f() { git rebase -i origin/${1}; }; f"
   ca = "!f() { git commit --amend; }; f"
   dr = "!f() { git push origin @:refs/drafts/${1}; }; f"
-  co = "!f() { git checkout ${1}; }; f"
+  co = "!f() { git checkout ${@}; }; f"
