@@ -19,4 +19,10 @@ else
     doIt;
   fi;
 fi;
+
+TMUX_PLUGIN_DIR=${HOME}/.tmux/plugins/tpm
+if [ ! -d $TMUX_PLUGIN_DIR ]; then
+  git clone https://github.com/tmux-plugins/tpm $TMUX_PLUGIN_DIR
+fi
+
 unset doIt;
