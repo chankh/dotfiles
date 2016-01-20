@@ -133,4 +133,8 @@ let g:lightline = {
   \ 'colorscheme': 'Tomorrow_Night_Eighties',
   \ }
 
+" Utilsnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UtilSnipsJumpBackwardTrigger="<tab>"
 set noshowmode
