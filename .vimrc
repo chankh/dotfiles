@@ -84,9 +84,9 @@ silent! colorscheme Tomorrow-Night-Eighties
 " use soft TAB
 set expandtab
 " number of visual spaces per TAB
-set tabstop=2
+set tabstop=4
 " number of space to use for autoindenting
-set shiftwidth=2
+set shiftwidth=4
 " }}}
 
 " Git {{{
