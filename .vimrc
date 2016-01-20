@@ -38,6 +38,7 @@ Plug 'nvie/vim-flake8'
 
 " Go {{{
 Plug 'fatih/vim-go'
+Plug 'vim-jp/vim-go-extra'
 " }}}
 
 " snippets {{{
@@ -117,10 +118,15 @@ nmap <leader>o :set paste!<CR>
 nmap <leader>d :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 " Go {{{
+autocmd Filetype go setlocal noexpandtab
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>e <Plug>(go-rename)
+au FileType go nmap <leader>i <Plug>(go-info)
+
+let g:go_fmt_command = "goimports"
 " }}}
 
 let g:lightline = {
