@@ -53,6 +53,11 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " fzf {{{
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf.vim'
+" }}}
+
+" tmux {{{
+Plug 'edkolev/tmuxline.vim'
 " }}}
 
 call plug#end()
@@ -138,3 +143,12 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UtilSnipsJumpBackwardTrigger="<tab>"
 set noshowmode
+
+" Plugin: fzf {{{
+nnoremap <silent> <C-p> :FZF<CR>
+" }}}
+" Plugin: fzf.vim {{{
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>C :Colors<CR>
+nnoremap <leader>f :Files<CR>
+" }}}
