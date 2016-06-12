@@ -62,7 +62,8 @@ Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
-let mapleader = "\\"
+" Leader - ( Spacebar )
+let mapleader = " "
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -72,8 +73,9 @@ syntax on
 
 " show line number
 set number
+set relativenumber
 
-" turn off backup
+turn off backup
 set nobackup
 set noswapfile
 
@@ -82,6 +84,9 @@ set title
 
 " highlight the current line
 set cursorline
+
+" stop that ANNOYING beeping
+set visualbell
 
 silent! colorscheme Tomorrow-Night-Eighties
 
@@ -93,6 +98,31 @@ set tabstop=4
 " number of space to use for autoindenting
 set shiftwidth=4
 " }}}
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Automatically :write before running commands
+set autowrite
+
+" Reload files changed outside vim
+set autoread
+
+" Make it obvious where 100 character is
+set textwidth=100
+set colorcolumn=+1
+
+" Auto resize Vim splits to active split
+set winwidth=104
+set winheight=5
+set winminheight=5
+set winheight=999
+
+" Quick window movements
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " Git {{{
 " commit message
@@ -110,10 +140,14 @@ autocmd BufWritePost *.py call Flake8()
 " }}}
 
 " Search {{{
+set gdefault
 set incsearch
 set ignorecase
 set smartcase
+set showmatch
 set hlsearch
+" Stop highlight after searching
+nnoremap <silent> <leader>, :noh<cr>
 nmap <leader>q :nohlsearch<CR>
 " }}}
 
