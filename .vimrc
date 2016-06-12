@@ -22,6 +22,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer'}
 " }}}
 
 " colorscheme {{{
@@ -64,7 +65,7 @@ Plug 'edkolev/tmuxline.vim'
 call plug#end()
 
 " Leader - ( Spacebar )
-let mapleader = " "
+let mapleader = "\<Space>"
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -76,7 +77,7 @@ syntax on
 set number
 set relativenumber
 
-turn off backup
+" turn off backup
 set nobackup
 set noswapfile
 
@@ -90,6 +91,9 @@ set cursorline
 set visualbell
 
 silent! colorscheme Tomorrow-Night-Eighties
+
+" toggle paste mode
+set pastetoggle=<F2>
 
 " Indentation {{{
 " use soft TAB
@@ -165,8 +169,19 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <leader>e <Plug>(go-rename)
 au FileType go nmap <leader>i <Plug>(go-info)
+" Open go doc in vertical window, horizontal or tab
+au FileType go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+au FileType go nnoremap <leader>s :sp <CR>:exe "GoDef" <CR>
+au FileType go nnoremap <leader>t :tab split <CR>:exe "GoDef" <CR>
 
 let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 " }}}
 
 let g:lightline = {
