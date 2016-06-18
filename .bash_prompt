@@ -87,7 +87,7 @@ NewLine="\n"
 Jobs="\j"
 OS=`uname`
 if [ $OS == 'Linux' ]; then
-  MyIP=$(ifconfig em1  | grep 'inet '| cut -d: -f2 | awk '{ print $2 }')
+  MyIP=$(ifconfig eno1  | grep 'inet '| cut -d: -f2 | awk '{ print $2 }')
   DefaultPS1="[\u@\h \W]\$ "
   NormalPrompt="[\u@$BIBlue$MyIP$Color_Off \W]\$ "
 elif [ $OS == 'Darwin' ]; then
