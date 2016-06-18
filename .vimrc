@@ -41,6 +41,7 @@ Plug 'nvie/vim-flake8'
 " Go {{{
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
+Plug 'sourcegraph/sourcegraph-vim'
 " }}}
 
 " snippets {{{
