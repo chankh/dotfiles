@@ -23,6 +23,7 @@ Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer'}
+Plug 'terryma/vim-expand-region'
 " }}}
 
 " colorscheme {{{
