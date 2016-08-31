@@ -164,13 +164,16 @@ nmap <leader>o :set paste!<CR>
 nmap <leader>d :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 " Go {{{
-autocmd Filetype go setlocal noexpandtab
+autocmd Filetype go setlocal noexpandtab tabstop=4 shiftwidth=4
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <leader>e <Plug>(go-rename)
 au FileType go nmap <leader>i <Plug>(go-info)
+au FileType go map <C-n> :cnext<CR>
+au FileType go map <C-m> :cprevious<CR>
+au FileType go nnoremap <leader>a :cclose<CR>
 " Open go doc in vertical window, horizontal or tab
 au FileType go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
 au FileType go nnoremap <leader>s :sp <CR>:exe "GoDef" <CR>
