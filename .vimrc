@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 " General {{{
 Plug 'Shougo/unite.vim'
+Plug 'Shougo/neocomplete.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'scrooloose/nerdcommenter'
@@ -22,8 +23,9 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer'}
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer'}
 Plug 'terryma/vim-expand-region'
+Plug 'majutsushi/tagbar'
 " }}}
 
 " colorscheme {{{
@@ -42,7 +44,7 @@ Plug 'nvie/vim-flake8'
 " Go {{{
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
-Plug 'sourcegraph/sourcegraph-vim'
+"Plug 'sourcegraph/sourcegraph-vim'
 " }}}
 
 " snippets {{{
@@ -96,6 +98,9 @@ silent! colorscheme Tomorrow-Night-Eighties
 
 " toggle paste mode
 set pastetoggle=<F2>
+
+" toggle tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " Indentation {{{
 " use soft TAB
@@ -161,7 +166,7 @@ nmap <leader>q :nohlsearch<CR>
 nmap <leader>l :setlocal number!<CR>
 nmap <leader>o :set paste!<CR>
 
-nmap <leader>d :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+nmap <F4> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 " Go {{{
 autocmd Filetype go setlocal noexpandtab tabstop=4 shiftwidth=4
