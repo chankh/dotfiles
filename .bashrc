@@ -15,6 +15,7 @@ fi
 #fi
 
 # User specific environment and startup programs
+export CLICOLOR=1
 export EDITOR=vim
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
@@ -27,6 +28,10 @@ elif [ $UNAME == "Darwin" ]; then
   export JAVA_HOME="$(/usr/libexec/java_home)"
   export LC_CTYPE=en_US.UTF-8
   export LC_ALL=en_US.UTF-8
+  # load bash_completion from Homebrew
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
   # brew info chruby
   source /usr/local/opt/chruby/share/chruby/chruby.sh
   source /usr/local/opt/chruby/share/chruby/auto.sh
