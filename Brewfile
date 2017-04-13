@@ -47,3 +47,4 @@ brew 'tig'
 brew 'tmux'
 brew 'vim', args: ['with-gettext', 'with-lua', 'with-override-system-vi']
 cask 'android-platform-tools'
+cask 'spotify'
