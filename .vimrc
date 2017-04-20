@@ -95,7 +95,8 @@ set cursorline
 " stop that ANNOYING beeping
 set visualbell
 
-silent! colorscheme Tomorrow-Night-Eighties
+set background=dark
+silent! colorscheme solarized
 
 " toggle paste mode
 set pastetoggle=<F2>
