@@ -204,7 +204,7 @@ let g:neocomplete#enable_smart_case = 1
 " }}}
 
 let g:lightline = {
-  \ 'colorscheme': 'Tomorrow_Night_Eighties',
+  \ 'colorscheme': 'solarized',
   \ }
 
 " Utilsnips
