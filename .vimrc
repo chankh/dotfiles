@@ -66,6 +66,10 @@ Plug 'junegunn/fzf.vim'
 " tmux {{{
 Plug 'edkolev/tmuxline.vim'
 " }}}
+" vimux {{{
+Plug 'benmills/vimux'
+Plug 'benmills/vimux-golang'
+" }}}
 
 call plug#end()
 
