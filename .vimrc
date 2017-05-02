@@ -43,7 +43,7 @@ Plug 'nvie/vim-flake8'
 " }}}
 
 " Go {{{
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-jp/vim-go-extra'
 "Plug 'sourcegraph/sourcegraph-vim'
 " }}}
