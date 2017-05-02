@@ -154,7 +154,8 @@ autocmd Filetype python setlocal tabstop=4
 autocmd Filetype python setlocal softtabstop=4
 autocmd Filetype python setlocal shiftround
 autocmd Filetype python setlocal autoindent
-autocmd BufWritePost *.py call Flake8()
+"vim-flake8 conflicts with syntastic, don't autorun flake8 on save
+"autocmd BufWritePost *.py call Flake8()
 " }}}
 
 " Search {{{
