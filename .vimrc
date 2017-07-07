@@ -226,3 +226,14 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>C :Colors<CR>
 nnoremap <leader>f :Files<CR>
 " }}}
+
+" Configure vimux {{{
+" Prompt for a command to run
+map <leader>vp :VimuxPromptCommand<CR>
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+" Inspect runner pane
+map <Leader>vi :VimuxInspectRunner<CR>
+" Zoom the tmux runner pane
+map <Leader>vz :VimuxZoomRunner<CR>
+" }}}
