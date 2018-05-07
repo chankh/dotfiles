@@ -1,0 +1,30 @@
+name: work
+windows:
+- name: bash
+  layout: b6fd,181x52,0,0,0
+  panes:
+  - focus: true
+    root: /Users/khchan
+- name: golang
+  layout: 8630,181x52,0,0[181x41,0,0,1,181x10,0,42,2]
+  panes:
+  - root: /Users/khchan/go/src/github.com/chankh
+    commands:
+      - pwd
+  - root: /Users/khchan/go/src/github.com/chankh
+    commands:
+      - go version
+- name: aws
+  layout: b6ff,181x52,0,0,2
+  panes:
+  - root: /Users/khchan/dev
+- name: dev
+  layout: b6ff,181x52,0,0,2
+  panes:
+  - root: /Users/khchan/dev
+- name: k8s
+  layout: b6ff,181x52,0,0,2
+  panes:
+  - root: /Users/khchan
+    commands:
+      - kubectl cluster-info
