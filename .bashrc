@@ -43,3 +43,7 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+alias eks="kubectl-osx --kubeconfig=${HOME}/.kube/config-preview"
+
+# alias for kubectl, I'm just lazy
+alias k=kubectl
