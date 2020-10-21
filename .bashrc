@@ -18,7 +18,7 @@ fi
 export CLICOLOR=1
 export EDITOR=vim
 export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/bin:$GOPATH/bin
+export PATH=$PATH:$HOME/bin:$GOPATH/bin:$(python -m site --user-base)/bin
 
 UNAME=`uname -s`
 
@@ -43,7 +43,8 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-alias eks="kubectl-osx --kubeconfig=${HOME}/.kube/config-preview"
+alias eks='AWS_REGION=us-west-2 kubectl --context=eks'
+alias eks2='AWS_REGION=us-west-2 kubectl --context=eks2'
 
 # alias for kubectl, I'm just lazy
 alias k=kubectl

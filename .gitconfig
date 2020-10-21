@@ -3,7 +3,7 @@
 	safecrlf = false
   excludesfile = ~/.gitignore_global
 [user]
-	name = KH Chan
+	name = Kwunhok Chan
 	email = kwunhok@gmail.com
 [pull]
 	rebase = true

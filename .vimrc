@@ -167,7 +167,7 @@ set cursorline
 set visualbell
 
 set background=dark
-silent! colorscheme solarized
+silent! colorscheme Tomorrow-Night-Eighties
 
 " toggle paste mode
 set pastetoggle=<F2>
@@ -337,7 +337,7 @@ augroup go
   " Open go doc in vertical window, horizontal or tab
   au FileType go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
   au FileType go nnoremap <leader>s :sp <CR>:exe "GoDef" <CR>
-  au FileType go nnoremap <leader>t :tab split <CR>:exe "GoDef" <CR>
+  au FileType go nnoremap <leader>ts :tab split <CR>:exe "GoDef" <CR>
 
 augroup END
 " }}}
@@ -425,5 +425,3 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
-"" Sets default shell to Bash
-set shell=/bin/bash
