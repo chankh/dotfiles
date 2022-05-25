@@ -32,7 +32,6 @@ call plug#begin(expand('~/.vim/plugged'))
 " Make sure you use single quotes
 " General {{{
 Plug 'Shougo/unite.vim'
-Plug 'Shougo/neocomplete.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'scrooloose/nerdcommenter'
@@ -46,6 +45,18 @@ Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
+" }}}
+
+" Autocomplete {{{
+Plug 'Shougo/ddc.vim'
+Plug 'vim-denops/denops.vim'
+
+" Install your sources
+"Plug 'Shougo/ddc-around'
+
+" Install your filters
+"Plug 'Shougo/ddc-matcher_head'
+"Plug 'Shougo/ddc-sorter_rank'
 " }}}
 
 " colorscheme {{{
