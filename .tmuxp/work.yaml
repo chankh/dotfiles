@@ -1,0 +1,18 @@
+session_name: work
+windows:
+- layout: d29e,204x59,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /Users/chankh
+  window_name: bash
+- focus: 'true'
+  layout: 5a36,204x59,0,0[204x49,0,0,2,204x9,0,50,3]
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  - go version
+  start_directory: /Users/chankh/dev
+  window_name: dev
