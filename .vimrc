@@ -52,11 +52,11 @@ Plug 'Shougo/ddc.vim'
 Plug 'vim-denops/denops.vim'
 
 " Install your sources
-"Plug 'Shougo/ddc-around'
+Plug 'Shougo/ddc-around'
 
 " Install your filters
-"Plug 'Shougo/ddc-matcher_head'
-"Plug 'Shougo/ddc-sorter_rank'
+Plug 'Shougo/ddc-matcher_head'
+Plug 'Shougo/ddc-sorter_rank'
 " }}}
 
 " colorscheme {{{
